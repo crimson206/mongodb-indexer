@@ -146,6 +146,11 @@ options = Options(
     discussion=False
 )
 
+dependencies = [
+    "crimson-intelli-type==0.4.0",
+    "pymongo"
+]
+
 
 # Define the general information of your package
 kwargs = Kwargs(
@@ -155,7 +160,7 @@ kwargs = Kwargs(
     description="Your package description.",
     # https://pypi.org/classifiers/
     topics=["Topic :: Software Development :: Libraries :: Python Modules"],
-    dependencies=["crimson-intelli-typ==0.4.0"],
+    dependencies=dependencies,
 )
 
 
